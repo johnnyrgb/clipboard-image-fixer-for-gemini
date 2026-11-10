@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="icon128.png" width="96" height="96" alt="Gemini Clipboard Image Renamer" />
+  <img src="icon128.png" width="96" height="96" alt="Clipboard Image Fixer for Gemini" />
 </p>
 
-<h1 align="center">Gemini Clipboard Image Renamer</h1>
+<h1 align="center">Clipboard Image Fixer for Gemini</h1>
 
 <p align="center">
   A lightweight browser extension that fixes the annoying <b>"File image.png already uploaded"</b> error when pasting multiple images from the clipboard on Google Gemini.
