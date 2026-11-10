@@ -34,11 +34,18 @@ You can now paste as many screenshots and images as you want with `Ctrl+V`!
 - ⚡ **Zero configuration**: Just install and use.
 - 🔒 **Privacy-friendly**: Does not send, read, or store any of your data or images.
 - 🪶 **Ultra lightweight**: Pure vanilla JavaScript without external dependencies.
-- 🦊 **Firefox compatible**: Built for Firefox Manifest V3.
+- 🦊 **Cross-browser**: Works seamlessly on Firefox, Google Chrome, Edge, and Brave (Manifest V3).
 
 ### Installation
 
-#### Temporary (for testing)
+#### Google Chrome / Chromium (Brave, Edge, Opera)
+1. Download or clone this repository.
+2. Open Chrome and navigate to `chrome://extensions/`.
+3. Enable **Developer mode** toggle in the top-right corner.
+4. Click **Load unpacked** (Загрузить распакованное расширение) in the top-left.
+5. Select the repository folder.
+
+#### Firefox
 1. Clone or download this repository.
 2. Open Firefox and go to `about:debugging#/runtime/this-firefox`.
 3. Click **"Load Temporary Add-on..."**.
@@ -64,10 +71,16 @@ You can now paste as many screenshots and images as you want with `Ctrl+V`!
 ### Решение
 Расширение динамически перехватывает обращение к свойствам файла в контексте страницы и присваивает каждому вставляемому файлу уникальное имя с таймштампом (например, `изображение_1731241234567_42.png`). Событие вставки остаётся полностью доверенным (`isTrusted: true`), а Gemini видит уникальные имена и без проблем прикрепляет подряд любое количество изображений.
 
-### Установка в Firefox
+### Установка
 
-#### Временная (для тестирования)
-1. Скачайте этот репозиторий (или нажмите **Code -> Download ZIP** и распакуйте).
+#### Google Chrome / Chromium (Brave, Edge, Яндекс Браузер)
+1. Откройте в Chrome страницу `chrome://extensions/`.
+2. Включите переключатель **«Режим разработчика»** (Developer mode) в правом верхнем углу.
+3. Нажмите кнопку **«Загрузить распакованное расширение»** (Load unpacked) в левом верхнем углу.
+4. Выберите папку с репозиторием.
+
+#### Mozilla Firefox
+1. Скачайте этот репозиторий.
 2. В Firefox откройте страницу `about:debugging#/runtime/this-firefox`.
 3. Нажмите кнопку **«Загрузить временное дополнение...»** (*Load Temporary Add-on...*).
 4. Выберите файл `manifest.json`.

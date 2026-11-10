@@ -1,7 +1,8 @@
 // Инжектируем page-script.js в контекст страницы (MAIN world)
 try {
+  const extensionApi = globalThis.browser || globalThis.chrome;
   const script = document.createElement("script");
-  script.src = browser.runtime.getURL("page-script.js");
+  script.src = extensionApi.runtime.getURL("page-script.js");
   script.onload = function () {
     this.remove();
   };
