@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Clipboard Image Renamer",
+  "version": "1.1.0",
+  "description": "Fixes Gemini's 'File already uploaded' error by giving pasted clipboard images unique names.",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-script.js"],
+      "matches": ["https://gemini.google.com/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gemini-clipboard-renamer@ivan",
+      "strict_min_version": "109.0"
+    }
+  }
+}

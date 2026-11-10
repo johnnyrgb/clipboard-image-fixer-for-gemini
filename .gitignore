@@ -1,0 +1,15 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives & builds
+*.zip
+*.xpi
+*.crx
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
